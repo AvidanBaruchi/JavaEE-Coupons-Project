@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="javaScript/globalFunctions.js"></script>
+<script src="javaScript/businessActions.js"></script>
+<script src="javaScript/cartActions.js"></script>
+<script src="javaScript/couponActions.js"></script>
+<script src="javaScript/updateContent.js"></script>
+<script src="javaScript/loginActions.js"></script>
+<link href="css/globalStyle.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<title></title>
+</head>
+<body>
+	<div id="containerDiv" class="container-fluid">
+
+		<div class="row" style="padding-bottom: 10px;">
+			<div class="col-sm-6">
+				<div id="adminFunctions"></div>
+			</div>
+			<div class="col-sm-6">
+				<div id="loginFunctions"></div>
+			</div>
+
+			<div class="row"></div>
+			<div class="row" style="height: 80%;">
+
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong><span id=leftBlockHeading> Business </span></strong>
+						</div>
+						<div id="businessListDiv" class="panel-body">
+							<div id="businessList" class="panel-body"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<strong><span id=leftBlockHeading> Coupon Selection </span></strong>
+								</div>
+								<div id="couponselectionDiv"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<strong> Coupons</strong>
+						</div>
+						<div id="couponListDiv" class="panel-body"></div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong><span id=rightBlockHeading> Shopping Cart </span></strong>
+						</div>
+						<div id="cartListDiv" class="panel-body"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		window.onload = WindowOnload();
+	</script>
+</body>
+</html>

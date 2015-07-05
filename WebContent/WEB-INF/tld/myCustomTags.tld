@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<short-name>myTagLib</short-name>
+
+	<tag>
+		<description>Line in shopping cart</description>
+		<name>CartLine</name>
+		<tag-class>il.ac.hit.project.tags.ShoppingCartLineTag</tag-class>
+		<body-content>scriptless</body-content>
+
+		<attribute>
+			<description>coupon name</description>
+			<name>line</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>il.ac.hit.project.model.ShoppingCartLine</type>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<description>Admin's business line</description>
+		<name>AdminBusinessLine</name>
+		<tag-class>il.ac.hit.project.tags.BusinessLine</tag-class>
+		<body-content>scriptless</body-content>
+
+		<attribute>
+			<description>Business</description>
+			<name>business</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>il.ac.hit.project.model.Business</type>
+		</attribute>
+
+		<attribute>
+			<description>Is Admin</description>
+			<name>admin</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.util.boolian</type>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<description>Coupon line</description>
+		<name>CouponLine</name>
+		<tag-class>il.ac.hit.project.tags.CouponLine</tag-class>
+		<body-content>scriptless</body-content>
+
+		<attribute>
+			<description>Coupon</description>
+			<name>coupon</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>il.ac.hit.project.model.Coupon</type>
+		</attribute>
+
+		<attribute>
+			<description>Is Admin</description>
+			<name>admin</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.util.boolian</type>
+		</attribute>
+
+	</tag>
+
+</taglib>

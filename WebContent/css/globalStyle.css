@@ -1,0 +1,27 @@
+@CHARSET "windows-1255";
+
+html, body {
+	height: 100%;
+}
+
+container-fluid {
+	height: 100%;
+}
+
+#addCouponbutton{
+	width: 100%;
+}
+
+#cartListDiv {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+#couponListDiv {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+#sessionIDTable tr {
+    cursor:pointer;
+}
